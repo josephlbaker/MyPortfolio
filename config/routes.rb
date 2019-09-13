@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   resources :portfolios, except: [:show]
-
+  #DEMONSTRATION REMOVE AT END OF PROJECT
+  get 'angular-items', to: 'portfolios#angular'
+  #######################################
   resources :blogs do
     member do
       get :toggle_status
