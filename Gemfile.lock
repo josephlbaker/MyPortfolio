@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/josephlbaker/baker_view_tool
+  revision: 4880e9b12c29d82fdc98625e35b8433d34af2c9c
+  specs:
+    baker_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -219,6 +225,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  baker_view_tool!
   bootsnap (>= 1.4.2)
   bootstrap (~> 4.3.1)
   byebug
