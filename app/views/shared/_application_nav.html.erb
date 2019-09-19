@@ -2,12 +2,11 @@
   <div class="inner">
     <h3 class="masthead-brand">Joe Baker</h3>
     <nav class="nav nav-masthead justify-content-center">
-      <%= link_to "Home", root_path, class: "nav-link active" %>
-      <%= link_to "About", about_me_path, class: "nav-link" %>
-      <%= link_to "Contact", contact_path, class: "nav-link" %>
-      <%= link_to "Blog", blogs_path, class: "nav-link" %>
-      <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
-      <%= login_helper "nav-link" %>
+      <%= link_to "Home", root_path, :class => current_class?(root_path) %>
+      <%= link_to "About", about_me_path, :class => current_class?(about_me_path) %>
+      <%= link_to "Contact", contact_path, :class => current_class?(contact_path) %>
+      <%= link_to "Projects", projects_path, :class => current_class?(projects_path) %>
+      <%= link_to "Skills", skills_path, :class => current_class?(skills_path) %>
     </nav>
   </div>
 </header>

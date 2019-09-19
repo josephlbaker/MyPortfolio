@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+  get 'projects', to: 'pages#projects'
+  get 'skills', to: 'pages#skills'
 
   resources :portfolios, except: [:show]
   #DEMONSTRATION REMOVE AT END OF PROJECT

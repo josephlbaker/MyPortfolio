@@ -19,4 +19,9 @@ module ApplicationHelper
   def copyright_generator
     BakerViewTool::Renderer.copyright "Joseph Baker", "All rights reserved"
   end
+
+  def current_class?(test_path)
+    return 'nav-link active' if request.path == test_path
+    'nav-link'
+  end
 end
